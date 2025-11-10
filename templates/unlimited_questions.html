@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlimited Questions - Document Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo i {
+            font-size: 3rem;
+            color: #667eea;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            line-height: 1.8;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .content h2 {
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .benefits {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 4px solid #28a745;
+        }
+
+        .benefits h3 {
+            color: #28a745;
+            margin-bottom: 15px;
+        }
+
+        .benefits ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .benefits li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .benefits li i {
+            color: #28a745;
+        }
+
+        .back-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+
+        .demo-section {
+            background: #e8f4fd;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            border-left: 4px solid #3498db;
+        }
+
+        .demo-section h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-infinity"></i>
+                <h1>Unlimited Questions</h1>
+            </div>
+            <p>Generate endless questions from your documents</p>
+        </div>
+
+        <div class="content">
+            <div style="text-align: center;">
+                <i class="fas fa-infinity feature-icon"></i>
+            </div>
+
+            <h2>About Unlimited Questions</h2>
+            <p>Our <strong>Unlimited Questions</strong> feature allows you to generate as many questions as you need from any document. Unlike traditional systems that provide a limited set of questions, our AI-powered system can create endless variations based on the content of your uploaded document.</p>
+
+            <div class="benefits">
+                <h3><i class="fas fa-check-circle"></i> Key Benefits</h3>
+                <ul>
+                    <li><i class="fas fa-rocket"></i> <strong>Endless Practice:</strong> Never run out of questions for studying or testing</li>
+                    <li><i class="fas fa-brain"></i> <strong>Smart Generation:</strong> AI creates unique questions based on document content</li>
+                    <li><i class="fas fa-sync-alt"></i> <strong>Continuous Learning:</strong> Generate new questions anytime you need more practice</li>
+                    <li><i class="fas fa-graduation-cap"></i> <strong>Comprehensive Coverage:</strong> Cover all topics and concepts from your document</li>
+                    <li><i class="fas fa-clock"></i> <strong>Time-Saving:</strong> No need to manually create additional questions</li>
+                </ul>
+            </div>
+
+            <h2>How It Works</h2>
+            <p>Our system analyzes your document and identifies key concepts, definitions, processes, and relationships. When you click the "More Questions" button, it generates additional questions using different aspects of the same content, ensuring variety while maintaining relevance.</p>
+
+            <div class="demo-section">
+                <h3><i class="fas fa-play-circle"></i> Try It Yourself</h3>
+                <p>Upload any document and use the "More Questions" button to see unlimited question generation in action. Each click generates 10 new questions based on your specific document content.</p>
+            </div>
+
+            <h2>Perfect For</h2>
+            <p>✅ <strong>Students:</strong> Unlimited practice questions for exams</p>
+            <p>✅ <strong>Teachers:</strong> Create endless quizzes and tests</p>
+            <p>✅ <strong>Corporate Training:</strong> Continuous assessment materials</p>
+            <p>✅ <strong>Self-Learners:</strong> Never-ending learning resources</p>
+
+            <a href="/" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Main App
+            </a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,4 @@
+Artificial Intelligence is the simulation of human intelligence processes by machines. 
+Machine Learning is a subset of AI that enables computers to learn without being explicitly programmed. 
+Natural Language Processing allows computers to understand and interpret human language. 
+Deep Learning uses neural networks with multiple layers to analyze various factors of data.

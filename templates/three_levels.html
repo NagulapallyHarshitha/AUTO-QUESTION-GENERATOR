@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Levels - Document Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo i {
+            font-size: 3rem;
+            color: #667eea;
+        }
+
+        .logo h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            font-weight: 700;
+        }
+
+        .feature-icon {
+            font-size: 4rem;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            line-height: 1.8;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .content h2 {
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .levels {
+            display: grid;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .level-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border: 3px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+
+        .level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .level-card.basic {
+            border-color: #28a745;
+        }
+
+        .level-card.medium {
+            border-color: #ffc107;
+        }
+
+        .level-card.advanced {
+            border-color: #dc3545;
+        }
+
+        .level-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .level-icon {
+            font-size: 2rem;
+        }
+
+        .level-icon.basic {
+            color: #28a745;
+        }
+
+        .level-icon.medium {
+            color: #ffc107;
+        }
+
+        .level-icon.advanced {
+            color: #dc3545;
+        }
+
+        .level-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .level-badge {
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-left: auto;
+        }
+
+        .level-badge.basic {
+            background: #28a745;
+            color: white;
+        }
+
+        .level-badge.medium {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .level-badge.advanced {
+            background: #dc3545;
+            color: white;
+        }
+
+        .level-features {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .level-features li {
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #f8f9fa;
+        }
+
+        .level-features li:last-child {
+            border-bottom: none;
+        }
+
+        .level-features li i {
+            width: 20px;
+            text-align: center;
+        }
+
+        .back-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 20px;
+            text-decoration: none;
+        }
+
+        .back-btn:hover {
+            background: #5a6fd8;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-layer-group"></i>
+                <h1>Three Learning Levels</h1>
+            </div>
+            <p>Adaptive questioning for different knowledge levels</p>
+        </div>
+
+        <div class="content">
+            <div style="text-align: center;">
+                <i class="fas fa-layer-group feature-icon"></i>
+            </div>
+
+            <h2>About Three Learning Levels</h2>
+            <p>Our <strong>Three Learning Levels</strong> system provides tailored questioning experiences for users at different stages of learning. Whether you're a beginner seeking basic understanding or an expert looking for deep analysis, we have the right level for you.</p>
+
+            <div class="levels">
+                <!-- Basic Level -->
+                <div class="level-card basic">
+                    <div class="level-header">
+                        <i class="fas fa-star level-icon basic"></i>
+                        <div class="level-title">Basic Level</div>
+                        <span class="level-badge basic">Foundational</span>
+                    </div>
+                    <p><strong>Perfect for:</strong> Beginners, quick reviews, and basic comprehension testing</p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Simple factual questions</li>
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Key concept identification</li>
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Basic understanding assessment</li>
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Straightforward multiple-choice format</li>
+                        <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Immediate feedback with explanations</li>
+                    </ul>
+                </div>
+
+                <!-- Medium Level -->
+                <div class="level-card medium">
+                    <div class="level-header">
+                        <i class="fas fa-star-half-alt level-icon medium"></i>
+                        <div class="level-title">Medium Level</div>
+                        <span class="level-badge medium">Comprehensive</span>
+                    </div>
+                    <p><strong>Perfect for:</strong> Intermediate learners, detailed study, and application testing</p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Definition-based questions</li>
+                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Process and method understanding</li>
+                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Application scenario questions</li>
+                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Moderate complexity challenges</li>
+                        <li><i class="fas fa-check-circle" style="color: #ffc107;"></i> Detailed explanatory feedback</li>
+                    </ul>
+                </div>
+
+                <!-- Advanced Level -->
+                <div class="level-card advanced">
+                    <div class="level-header">
+                        <i class="fas fa-star level-icon advanced"></i>
+                        <div class="level-title">Advanced Level</div>
+                        <span class="level-badge advanced">Expert</span>
+                    </div>
+                    <p><strong>Perfect for:</strong> Experts, critical thinkers, and deep analysis</p>
+                    <ul class="level-features">
+                        <li><i class="fas fa-check-circle" style="color: #dc3545;"></i> Comparative analysis questions</li>
+                        <li><i class="fas fa-check-circle" style="color: #dc3545;"></i> Real-world application scenarios</li>
+                        <li><i class="fas fa-check-circle" style="color: #dc3545;"></i> Advantage/disadvantage evaluation</li>
+                        <li><i class="fas fa-check-circle" style="color: #dc3545;"></i> Complex problem-solving</li>
+                        <li><i class="fas fa-check-circle" style="color: #dc3545;"></i> In-depth analytical feedback</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>Why Three Levels Matter</h2>
+            <p>🎯 <strong>Personalized Learning:</strong> Each user can choose the level that matches their current understanding</p>
+            <p>📈 <strong>Progressive Difficulty:</strong> Move from basic to advanced as your knowledge grows</p>
+            <p>🔍 <strong>Comprehensive Assessment:</strong> Test different cognitive skills from recall to analysis</p>
+            <p>💡 <strong>Adaptive Challenges:</strong> The system adapts to provide appropriate challenges for each level</p>
+
+            <h2>Getting Started</h2>
+            <p>1. <strong>Start with Basic:</strong> If you're new to the topic, begin with basic questions to build foundation</p>
+            <p>2. <strong>Progress to Medium:</strong> Once comfortable, move to medium for deeper understanding</p>
+            <p>3. <strong>Challenge with Advanced:</strong> Use advanced level for expert-level analysis and application</p>
+            <p>4. <strong>Switch Freely:</strong> You can switch between levels anytime based on your needs</p>
+
+            <a href="/" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                Back to Main App
+            </a>
+        </div>
+    </div>
+</body>
+</html>
