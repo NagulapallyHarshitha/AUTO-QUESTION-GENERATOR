@@ -5,3 +5,9 @@ torch
 pdfplumber
 python-docx
 nltk
+PyPDF2
+requests
+itsdangerous
+Werkzeug
+Jinja2
+MarkupSafe
